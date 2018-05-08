@@ -1,10 +1,10 @@
 {
   "name": "roman-numeral-converter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Small description for roman-numeral-converter goes here",
+  "description": "Simple component to convert integers within specified range into roman numerals.",
   "license": "MIT",
-  "author": "",
+  "author": "Zhafarina Ungku",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -17,8 +17,10 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "bootstrap": "^4.1.1",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
+    "ember-bootstrap": "^1.2.2",
     "ember-cli": "~3.1.2",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
@@ -28,6 +30,7 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.1.1",
+    "ember-cli-sass": "^7.1.7",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",

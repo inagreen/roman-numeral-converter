@@ -1,0 +1,39 @@
+<div class="container h-100">
+  <form>
+    <div class="form-group calculator col-12 h-100">
+      <div class="input-group mx-auto col-6 justify-content-center align-items-center h-100">
+        {{input
+            value=value
+            class="form-control"
+            placeholder="Put any integer between 1-3999"
+        }}
+        <div class="input-group-append">
+          <button id="convert" class="btn btn-outline-primary" type="button" {{action "convertNumber" value}}>Convert</button>
+        </div>
+        {{#if validationError}}
+          <div class="row col-12">
+            <div class="alert alert-danger" role="alert">
+              {{validationError}}
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button id="okay" type="button" class="btn btn-light align-self-end col-auto" {{action "reset"}}>Okay</button>
+              </div>
+            </div>
+          </div>
+        {{/if}}
+        {{#if convertedNumber}}
+          <div class="row col-12">
+            <div class="card w-75 mx-auto">
+              <div class="card-body">
+                <h1 class="card-title">Result</h1>
+                <h2 class="card-text">{{convertedNumber}}</h2>
+                <button id="reset" type="button" class="btn btn-primary" {{action "reset"}}>Reset</button>
+              </div>
+            </div>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </form>
+</div>
